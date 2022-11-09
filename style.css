@@ -1,0 +1,1187 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    color: #636a76;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 2px;
+    border: 1px solid #cbd0d8;
+}
+#check-in , #check-out {
+    width: 200px ;
+}
+.header-area {
+    position: relative;
+    z-index: 99;
+}
+.top-header {
+position: relative;
+z-index: 11;
+width: 100%;
+height: 50px;
+background-color: #0e2737;
+color: #212529;
+font-size: 14PX;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.top-header-contacts a {
+padding-right: 20px;
+}
+.top-header div {
+padding: 0 15px;
+}
+.top-header span {
+    color: #fff;
+}
+.header-social-media i {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+/* test  */
+
+.main-menu ul {
+    transition: all 1s ease-out;
+}
+/* lable  */
+nav .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    cursor: pointer;
+}
+/* spans */
+nav .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+nav .menu-icon .nav-icon:before {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    background: #333;
+    transition: all .2 ease-out;
+}
+nav .menu-icon .nav-icon:after {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -5px;
+    background: #333;
+    transition: all .2 ease-out;
+}
+nav .menu-btn {
+    display: none;
+}
+label.menu-icon {
+    display: none;
+}
+/* transform */
+.menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+transform: rotate(45deg);
+top: 0;
+}
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+transform: rotate(-45deg);
+top: 0;
+}
+
+/* test  */
+
+
+.container-header {
+height: 80px;
+width: 100%;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    padding: 25PX ;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-menu ul a {
+    margin: 0 20px;
+    color: #333533;
+    font-size: 18px;
+}
+.main-menu ul li:not(:last-child) a:hover{
+    color: rgb(104, 184, 187);
+}
+.sub-menu {
+    display: none;
+    
+}
+.sub-menu ul li a {
+    font-size: 14px;
+    font-weight: 500;
+}
+li.inner-menu:hover .sub-menu{
+display: block;
+position: absolute;
+margin-left: -35PX;
+}
+li.inner-menu:hover .sub-menu ul {
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow:0 2px 14px 5px rgb(20 20 20 / 5%);
+}
+li.inner-menu:hover .sub-menu ul li {
+    padding: 0 0 20px 5px;
+    width: 150px;
+}
+li.inner-menu:hover .sub-menu ul li:first-child{
+    padding-top: 20px;
+}
+.sub-menu-2 {
+    display: none;
+}
+.menus-inside:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
+    margin-left: 120px;
+    margin-top: -30px;
+}
+    .sub-menu .menus-inside i {
+        margin-left: 10px;
+}
+.welcome-area{
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(1, 12, 46, 0.75), rgba(1, 12, 46, 0.75) ),
+    url(assets/luxury-room.jpg) center/cover;
+}/* 
+linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(assets/luxury-room.jpg) center/cover;
+ */
+.search-form {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+.search-form .hotel-search-form {
+    padding: 0 40px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 5px;
+    height: 160px;
+    margin-top:-80px ;
+    box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
+    background-color: #fff;
+margin-right: 200px;
+}
+.search-form-item {
+    width: 100%;
+}
+.search-form-item form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.search-form-item form button {
+    background-color: aqua;
+    color: #fff;
+    padding: 5px 12px;
+    border: none;
+    width: 150px;
+    margin-top: 30px;
+    line-height: 2;
+    cursor: pointer;
+}
+.search-form-item form button:hover {
+    background-color: #fff;
+    color: aqua;
+    box-shadow:  0 2px 14px 5px rgb(20 20 20 / 5%);
+}
+.welcome-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+.welcome-slide h1 {
+    color: #fff;
+    font-size: 70px;
+}
+.welcome-slide h4{
+    margin-top: 10%;
+color: #fff;
+}
+.welcome-slide button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid aqua;
+    font-size: 18px;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+.welcome-slide button:hover {
+    background-color:aqua;
+}
+.last-child {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.last-child:hover {
+    /* color: #fff; */
+    background-color: #333533;
+}
+.last-child:hover li a {
+    color: #fff;
+}
+.last-child li a span{
+    vertical-align: middle;
+}
+.inner-menu a span {
+    vertical-align: middle;
+}
+.container-about-area {
+    position: relative;
+}
+.row-about-hotel {
+    display: flex;
+    justify-content: center;
+    padding: 12% 6%;
+}
+.about-hotel-description{
+    padding: 0 15px;
+}
+.about-hotel-description h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: aqua;
+    margin: 0 0 10px;
+    
+}
+.about-hotel-description h2 {
+    font-size: 36px;
+    color: #2a303b;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+.about-hotel-description h5 {
+color:#636a76;
+font-size: 20px;
+margin: 0 0 30px;
+line-height: 1.8;
+font-weight: 400;
+}
+.about-hotel-images {
+    display: flex;
+}
+.about-hotel-images .first-column{
+    display: flex;
+    flex-direction: column;
+}
+.about-hotel-images .first-column img{
+    width: 223px;
+    height: 182px;
+    /* margin: 0 8px 8px 0; */
+    border-radius: 2px;
+}
+.about-hotel-images .second-column img {
+    width: 225px;
+    height: 371px;   
+    border-radius: 2px;
+}
+.nav-dir-row {
+    margin-right: 30px;
+}
+.roberto-service {
+    width: 100%;
+    max-height: 240px;
+}
+.container-roberto-service {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container-roberto-service div{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.144);
+    margin-bottom: 100px;
+}
+.container-roberto-service div h5 {
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container-roberto-service div h5:hover {
+    color: aqua;
+}
+.roberto-rooms {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+
+}
+.container-roberto-room{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.room-profile ,.room-photo {
+    width: 50%;
+    height: 600px;
+    position: relative;
+}
+.container-roberto-room .room-profile {
+    background-color: #0e2737;
+    color: #fff;
+}
+.room-photo img {
+    width: 100%;
+    height: 600px;
+}
+.room-content {
+    padding:100px 0 0 40px;
+   
+}
+.room-content h2 {
+    font-size: 36px;
+}
+.room-content h3 {
+    font-size: 36px;
+    color: aqua;
+    line-height: 2;
+}
+.room-content h3 span {
+    font-size: 16px;
+    color: #fff;
+}
+.room-content ul {
+    padding-top: 40px;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.room-content ul li span {
+    display: inline-block;
+    min-width: 100px;
+}
+.room-content button {
+    color: #fff;
+    background-color: aqua;
+}
+.room-content button , .items-contact button {
+    border: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.next-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: aqua;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    width: 140px;
+    height: 40px;
+}
+.next-button:hover{
+    background-color: #0b171f;
+}
+.Previous-button {
+    position: absolute;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    color: #333533;
+    text-align: center;
+    line-height: 3;
+    width: 140px;
+    height: 40px;
+    font-weight: 600;
+}
+.Previous-button:hover{
+    color: #fff;
+    background-color: aqua;
+}
+
+
+.column-img {
+    overflow: hidden;
+    margin-left: 7px;
+    max-height: 371px;
+}
+.column-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 1s;
+}
+.column-img img:hover {
+    transform: scale(1.5);
+}
+.row-img {
+    overflow: hidden;
+    /* margin-left: 7px; */
+    max-height: 182px;
+}
+.row-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 1s;
+}
+.row-img img:hover {
+    transform: scale(1.5);
+}
+.row-img2 {
+    overflow: hidden;
+    /* margin-left: 3px; */
+    max-height: 182px;
+    margin-top: 7px;
+}
+.row-img2 img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 1s;
+}
+
+.row-img2 img:hover {
+        transform: scale(1.5);
+}
+.testimonials {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+}
+.row-testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
+}
+.row-testimonials div {
+    width: 50%;
+}
+.row-testimonials .col-1 img {
+    width: 478px;
+    height: 409px;
+    border-radius: 5px;
+}
+.row-testimonials .col-2 h6 {
+    color: aqua;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.row-testimonials .col-2 h2 {
+    font-size: 40px;
+    color:#2a303b;
+    margin-bottom: 40px;
+}
+.row-testimonials .col-2 p {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color:#636a76;
+    line-height: 1.8;
+}
+.rate {
+    margin-top: 15px;
+    margin-bottom: 40px
+}
+.rate .star {
+    margin-bottom: 10px;
+}
+.rate .star i {
+    color: darkorange;
+}
+.col-2 .circle i {
+    color: #636a76;
+    font-size: 14px;
+    margin-right: 2px;
+}
+.roberto-project {
+    z-index: 1;
+    margin: 100px 0;
+}
+.cotainer-project {
+    display: flex;
+}
+.cotainer-project .project-slide { 
+    width: calc(100%/3);
+    height: 600px;
+    position: relative;
+}
+.cotainer-project div img {
+    width: 100%;
+    height: 100%;
+}
+.img-overly {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    opacity: .9;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .8s ease;
+}
+.project-slide:hover .img-overly{
+    height: 33%;
+}
+.text {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    line-height: 1.5;
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    line-height: 3.5;
+    padding-left: 20px;
+}
+
+.roberto-contact {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 100px auto;
+   
+}
+.container-contact{
+    max-width: 960px;
+    height: 170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(4, 15, 46, 0.5),rgba(4, 15, 46, 0.5)  ),
+    url(assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.items-contact {
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.items-contact div {
+    color: #fff;
+    font-size: larger;
+    line-height: 1.5;
+}
+.items-contact button {
+    color: aqua;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.above-footer {
+    width: 100%;
+    height: 130px;
+}
+.above-footer .container-logos {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.above-footer .row-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-height: 600;
+    background-color: #0e2737;
+    padding-top: 80px;
+}
+.container-footer , .container-copyright {
+    max-width: 1100PX;
+    margin: 0 auto;
+}
+.row-item-footer {
+    display: flex;
+}
+.row-item-footer div {
+    color: #fff;
+    padding: 10px;
+    height: 250px;
+    line-height: 2;
+}
+.row-item-footer div span {
+    color:#636a76;
+}
+.row-item-footer div h4 {
+    margin-bottom: 12px;
+}
+.row-item-footer .col1-footer {
+flex: 0 0 25%;
+}
+.row-item-footer .col1-footer h3 {
+color:aqua;
+font-size: 24px;
+}
+.row-item-footer .col2-footer {
+flex: 0 0 25%;
+}
+.row-item-footer .col3-footer{
+flex: 0 0 16.333%;
+}
+.row-item-footer .col3-footer ul li {
+    color: #636a76;
+}
+.row-item-footer .col4-footer{
+flex: 0 0 33.333%;
+}
+#form {
+    position: relative;
+}
+.form-footer {
+    width: 100%;
+    height: 46px;
+    background-color: #3e525f;
+    border: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.col4-footer form button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    color: #ffffff;
+    background-color: #1cc3b2;
+    right: 3px;
+    top: 13px;
+}
+.content-copyright {
+    padding: 15px 0;
+    border-top: 1px solid #636a76;
+    color: #636a76;
+}
+.row-copyright{
+    display: flex;
+}
+.row-copyright .copyright {
+    flex: 0 0 66.666%;
+}
+.row-copyright .social-icons {
+    flex: 0 0 33.333%;
+}
+.row-copyright .social-icons a {
+    color: #afb4bf;
+    padding-right: 20px;
+    float: right;
+}
+
+/* MAKE RESPONSIVE */
+
+@media screen and (max-width:600px) {
+    body {
+        width: 100%;
+    }
+    .top-header div {
+        padding: 0;
+    }
+    
+    .top-header-contacts span {
+        display: none;
+    }
+    .header-social-media i {
+        padding-left: 10px;
+    }
+    .main-menu ul {
+        display: none;
+        /* test  */
+        /* max-height: 0; */
+    }
+    .main-navbar {
+        justify-content: space-between;
+    }
+    .nav-brand{
+        max-width: 90px;
+        margin-right: 15px;
+    }
+    .nav-brand img {
+        width: 90px;
+        height: 23px;
+    }
+    .welcome-slide h4 {
+        margin-top: 150px;
+    }
+    .welcome-slide h1 {
+        font-size: 30px;
+    }
+    div.check-out , div.check-in {
+     width: 50%;
+    }
+    div.hotel-search-form {
+        width: 100%;
+        display: flex;
+        padding: 30px 30px 0 30px;
+        flex-wrap: wrap;
+    }
+    
+.search-form .hotel-search-form {
+    height: auto;
+}
+    .container-header {
+        height: 70px;
+    }
+    .search-form-item form {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    div.check-in , div.check-out {
+        width: 50%;
+        padding:0 10px 10px 10px;
+    }
+    #check-in , #check-out {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+    .search-form-item form div.number {
+        width: 33.3%;
+        padding: 10px;
+    }
+    input[type=number] {
+        width: 100%;
+    }
+.search-form-item form div label {
+    font-size: 14px;
+}
+.search-form-item form div input {
+    height: 40PX;
+}
+.search-form-item form button {
+    width: 100%;
+    margin: 10px 8px 20px 8px;
+}
+.row-about-hotel {
+    flex-direction: column;
+    padding-top: 200px;
+}
+.about-hotel-description h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-hotel-description h6 {
+    font-size: 14px;
+}
+.about-hotel-description h5 , .row-testimonials .col-2 p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.about-hotel-images {
+    width: 100%;
+}
+.about-hotel-images .first-column img {
+    width: 162px;
+    height: 128px;
+}
+.about-hotel-images .second-column img{
+    width: 162px;
+    height: 267px;
+}
+.container-roberto-service {
+    flex-wrap: wrap;
+}
+.container-roberto-service div {
+    width: 50%;
+}
+.roberto-service {
+    max-height: 500px;
+}
+.container-roberto-service{
+    padding: 0;
+    justify-content: space-between;
+}
+.container-roberto-service div {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.container-roberto-room {
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #0e2737;
+}
+.roberto-rooms{
+    height: auto;
+}
+.room-profile, .room-photo {
+    width: 100%;
+    height: auto;
+    position: initial;
+}
+
+ .room-photo img {
+    width: 100%;
+    height: 240px;
+ }
+ .room-content {
+    padding: 30px 0 0 15px;
+    height: 450px;
+ }
+ .room-content h2 , .room-content h3 , .row-testimonials .col-2 h2 {
+    font-size: 24px;
+ }
+ .row-testimonials {
+    flex-direction: column;
+    padding: 0;
+ }
+ /* div.col-1 , div.col-2{
+    width: 100%;
+ } */
+ .row-testimonials .col-1 img {
+    width: 100%;
+    height: 320px;
+    padding: 15px;
+    border-radius: 20px;
+ }
+ div.col-2 {
+    padding: 15px;
+ }
+ .testimonials{
+    padding-top: 0;
+ }
+ .row-testimonials div {
+    width: 100%;
+ }
+
+ #hide-in-responsive {
+    display: none;
+ }
+ #show-in-responsive {
+    width: 100%;
+ }
+ .roberto-contact {
+    margin-bottom: 50px;
+ }
+.container-contact {
+    height: 330px;
+    width: 100%;
+}
+.items-contact {
+    display: block;
+    padding: 30px;
+}
+.items-contact div {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.items-contact div h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.items-contact div h5 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.above-footer {
+    height: 70px;
+}
+.above-footer .row-logos img{
+    height: 30px;
+}
+.row-item-footer {
+    flex-direction: column;
+}
+.row-copyright {
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.row-copyright .social-icons{
+    margin-top: 10px;
+}
+.row-copyright .social-icons a{
+    float: none;
+}
+label.menu-icon{
+    display: block;
+    margin: -18px -50% 0 0;
+    position: absolute;
+    left: 300px;
+}
+/* test  */
+.menu-btn:checked ~ .main-menu ul {
+    /* max-height: 300px; */
+    display: flex;
+    width: 200PX;
+    background: #fff;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.main-menu ul li {
+    padding-bottom: 20px;
+}
+li.inner-menu:hover .sub-menu{
+    margin-left: -200PX;
+margin-top: -60px; }
+.sub-menu ul li.menus-inside i {display: none;}
+
+}
+
+
+@media screen and (max-width:1200px){
+    .row-testimonials .col-1 img {
+        width: 100%;
+        height: 430px;
+        padding: 0 50px;}
+        .rate{ margin-bottom: 20px;}
+        .rate .star {font-size: 14px;}
+        .col-2 .circle i { font-size: 12px;} 
+}
+@media screen and (max-width:390px){
+    .about-hotel-images .first-column .row-img ,
+    .about-hotel-images .first-column .row-img2 {
+        width: 146px;
+        height: 116px;
+    }
+    .about-hotel-images .second-column{
+        width: 146px;
+        height: 230px;
+    }
+    .about-hotel-images .second-column img {
+        height: 240px;}
+}
+@media screen and (max-width:360px) {
+    label.menu-icon { left: 250px; }
+    .menu-btn:checked ~ .main-menu ul {width: 150px;}
+    li.inner-menu:hover .sub-menu{
+        margin-left: -150PX;}
+}
+@media screen and (max-width:320px){
+    label.menu-icon { left: 200px; }
+    .welcome-slide h1 {font-size: 24px;}
+    .room-content ul li { font-size: 14px;}
+    .room-content button, .items-contact button{
+        width: 160px;}
+    .items-contact div h5 {
+            font-size: 16px;}
+    .Previous-button , .next-button{
+        width: 120px;
+    }
+    
+}
+@media screen and (max-width: 500px) and (min-width: 420px) {
+    label.menu-icon { left: 370px; } 
+}
+@media screen and (max-width: 600px) and (min-width: 500px){
+    label.menu-icon { left: 440px;} 
+}
+@media screen and (max-width:768px) and (min-width:601px) {
+    .top-header-contacts a span {
+        display: none;
+    }
+    .main-navbar .nav-brand img {
+        width: 70px;
+        padding-top: 5px;
+    }
+    .main-menu ul a {
+        margin: 0 10px;
+        color: #333533;
+        font-size: 14px;}
+        
+.welcome-slide h1 {
+    font-size: 50px;
+    line-height: 2}
+    #check-in , #check-out {
+        width: 100px;
+        font-size: 12px;
+        height: 40px;}
+    input[type=number]{
+    width: 40px;
+    height: 40px;
+        }
+        .search-form-item form button{
+            width: 100px;
+            line-height: 1;
+        }
+    .row-about-hotel {
+            flex-direction: column;
+            padding: 18% 6%;}
+        
+    .container-roberto-service div {
+            padding: 10px;}
+                
+    .container-roberto-service div {
+             padding: 10px;
+                }
+    .container-roberto-service div h5 {
+             font-size: 12px;}
+    .container-roberto-service div.col4 img {
+        height: 50px;
+    }
+    .roberto-rooms {
+        height: 500px;
+    }
+    .row-testimonials {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .row-testimonials div{
+        width: 100%;
+    }
+    .row-testimonials div.col-2 {
+        padding: 40px;
+    }
+    .cotainer-project .project-slide {
+        height: 400px;
+    }
+    .text { font-size: 11px;
+        line-height: 1.2;
+    }
+    .caption { line-height: 2;
+    }
+    .row-item-footer {
+        flex-wrap: wrap;
+    }
+    .row-item-footer .col1-footer ,
+    .row-item-footer .col2-footer ,
+    .row-item-footer .col3-footer ,
+    .row-item-footer .col4-footer {
+        flex: 0 0 50%;
+    }
+
+}
+@media screen and (max-width:992px) and (min-width:769px) {
+    .main-navbar {
+        justify-content: space-between;}
+    .nav-brand img {
+            width: 100px;}
+    .main-menu ul a {
+        margin: 0 10px;
+        font-size: 18px;}
+        
+#check-in, #check-out {
+    width: 110px;
+font-size: 12px;}
+form div label {
+        font-size: small;
+    }
+.row-about-hotel {
+        flex-direction: column; }
+.container-roberto-service div {
+     padding: 10px;}
+     .row-testimonials {
+        justify-content: space-between;
+        padding: 0;}
+.cotainer-project .project-slide {
+     height: 500px;}
+.text {
+    line-height: 1;
+}
+
+.row-item-footer .col1-footer img{
+    width: 100px;
+}
+.row-item-footer .col1-footer h3 {
+    font-size: 18px; }
+    .row-item-footer div span {
+        font-size: 14px;
+    }
+    .row-about-hotel {
+        padding: 12% 14%;} 
+    .container-roberto-service div.col4 img {
+            height: 50px;
+        }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
