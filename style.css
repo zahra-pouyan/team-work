@@ -202,10 +202,7 @@ linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(assets/luxury-room.jpg) center/cover;
  */
 .search-form {
-    position: absolute;
     z-index: 100;
-    width: 100%;
-    margin-left: 100px;
     display: flex;
     justify-content: center;
 }
@@ -219,7 +216,6 @@ linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     margin-top:-80px ;
     box-shadow: 0 2px 14px 5px rgb(20 20 20 / 5%);
     background-color: #fff;
-margin-right: 200px;
 }
 .search-form-item {
     width: 100%;
